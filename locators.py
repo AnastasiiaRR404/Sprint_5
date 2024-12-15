@@ -1,0 +1,27 @@
+from selenium.webdriver.common.by import By
+
+
+class Locators:
+    EMAIL_INPUT= (By.XPATH, ".//form/fieldset/div/div/input")
+    ENTER_TO_PROFILE_BUTTON = (By.XPATH, './/button[text() = "Войти в аккаунт"]')
+    AUTH_BUTTON = (By.XPATH, './/button[text() = "Войти"]')
+    EXIT = (By.XPATH, './/button[text()= "Выход"]')
+    REGESTRATION_BUTTON = (By.XPATH,'//button[text()="Зарегистрироваться"]')
+    REGISTRATION_LINK = (By.XPATH, '//a[@href="/register"]')
+    NAME_CREATED = (By.XPATH,'.//fieldset[1]/div/div/input')
+    EMAIL_CREATED = (By.XPATH,'.//fieldset[2]/div/div/input')
+    PASSWORD_CREATED = (By.XPATH,'.//fieldset[3]/div/div/input')
+    EMAIL = (By.XPATH, './/label[text()="Email"]/parent::div/input')
+    PASSWORD = (By.XPATH, ' .//label[text()="Пароль"]/parent::div/input')
+    MAKE_AN_ORDER = (By.XPATH, './/button[text()="Оформить заказ"]')
+    INCORRECT_PASSWORD = (By.XPATH,'//p[text() = "Некорректный пароль"]')
+    PROFILE = (By.XPATH,'.//p[text()="Личный Кабинет"]')
+    LOGIN = (By.XPATH,'//a[text() = "Войти"]')
+    RESTORE_LINK = (By.XPATH,'.//a[text() = "Восстановить пароль"]')
+    RESTORE_BUTTON = (By.XPATH,'.//button')
+    LOGO = (By.XPATH,'.//header/nav/div')
+    CONSTRACTOR = (By.XPATH, '//p[text ()="Конструктор"]')
+    EXIT = (By.XPATH, './/button[text()= "Выход"]')
+    SAUCES = (By.XPATH,'.//div/div/main/section[1]/div[1]/div[2]')
+    TOPPINGS = (By.XPATH,'.//div/main/section[1]/div[1]/div[3]')
+    BUNS = (By.XPATH, './/div/main/section[1]/div[1]/div[1]')
