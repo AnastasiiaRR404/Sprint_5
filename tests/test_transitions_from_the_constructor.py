@@ -1,5 +1,3 @@
-import time
-
 from constants import Constant
 from locators import Locators
 
