@@ -1,3 +1,5 @@
+import time
+
 from constants import Constant
 from locators import Locators
 
@@ -19,5 +21,6 @@ class TestTransitionsFromTheConstructor:
 
         driver.find_element(*Locators.SAUCES).click()
         driver.find_element(*Locators.BUNS).click()
+
         actual_class = driver.find_element(*Locators.BUNS).get_attribute("class")
         assert actual_class == Constant.EXPECTED_CLASS
